@@ -43,7 +43,6 @@ header {
 }
 
 #main-container {
-    margin-bottom: -733px;
     
 }
 
@@ -87,8 +86,10 @@ header {
 
 #bottom-container {
     background-color: white;
-    position: relative;
-    top: -718px;
+    /*position: relative;
+    top: -718px; I've add to comment/remove position:relative on multiple elements because it made a lot of mess in terms of space. Before doing this there was space either between the footer and the content or the footer would be stuck to the content but there would bea blank/background-color space between the footer and the bottom of the page which is not what I wanted. So instead I opted to go with margin and that fixed my issue which puzzled me for several days.*/
+    margin-bottom: -16px;
+    margin-top: -718px;
     width: 100%;
     height: 500px;
 }
@@ -96,8 +97,8 @@ header {
 #product {
     float: left;
     position: relative;
-    top: 30px;;
-    left: 40px;
+    top: 180px;
+    left: 500px;
     font-weight: 500;
     font-family: sans-serif;
 }
@@ -105,8 +106,8 @@ header {
 #under-product {
     float: left;
     position: relative;
-    top: 70px;
-    left: -80px;
+    top: 210px;
+    left: 380px;
     color: #E5658C;
     font-size: 30px;
 }
@@ -114,23 +115,25 @@ header {
 #para {
     float: left;
     position: relative;
-    top: 150px;
-    left: -440px;
+    top: 290px;
+    left: 18px;
     color: #998A8A;
 }
 
 #small-yoghurt {
     float: right;
-    position: relative;
+    /*position: relative;
     top: 40px;
-    left: -500px;
+    left: -500px;*/
+    margin-top: 40px;
+    margin-right: 400px;
     width: 20%;
     height: 450px;
 }
 
 #bottom-container2 {
-    position: relative;
-    top: -733px;
+    /*position: relative;
+    top: -733px;*/
     width: 100%;
     height: 150px;
     background-color: #C8B513;
@@ -176,17 +179,18 @@ header {
 }
 
 #footer {
-    position: relative;
-    padding: 0;
     background-color: #C53D67;
     width: 100%;
     height: 270px;
 }
 
 #footer p {
-    position: relative;
+    /*position: relative;*/
+    width: 20%;
+    margin-left: 760px;
+    margin-top: 50px;
     top: 50px;
-    left: 197px;
+    left: 765px;
     text-align: center;
     color: white;
 }
