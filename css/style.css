@@ -194,3 +194,204 @@ header {
     text-align: center;
     color: white;
 }
+
+/*--START MEDIA QUERIES--*/
+
+@media only screen and (min-width: 150px) and (max-width: 768px) {
+    
+body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    header {
+    background-color: #EEEBEC;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    
+}
+    
+    
+#top-nav a {
+    position: relative;
+    left: 100px;
+    top: -3px;
+    display: inline-block;
+   text-decoration: none; 
+    padding-top: 10px;
+    margin: 1px;
+    color: #988989;
+    font-weight: bolder;
+    font-family: sans-serif;
+        font-size: 9px;
+    /*background-color:*/ 
+}
+
+#top-nav a:hover {
+    text-decoration: none;
+    color: #CDC62A;
+    
+}
+    
+    
+#logo {
+        position: relative;
+        left: 20px;
+        top: 23px;
+        width: 15%;
+        height: 20px;
+    }
+    
+#yoghurt {
+    width: 100%;
+    height: 160px;
+}
+    
+#pink-circle {
+    position: relative;
+    top: -65px;
+    left: 180px;
+    width: 20%;
+    height: 50px;
+    border-radius: 70%;
+    background-color: #C8C10D;
+    /*This is actually the yellow circle but every time I did it how it should be done the pink circle ended up behind the yellow one until I tried it this way*/
+    
+}
+
+#yellow-circle {
+    position: relative;
+    top: -120px;
+    left: 185px;
+    width: 20%;
+    height: 50px;
+    border-radius: 70%;
+    background-color: #CA315B;
+    opacity: 0.95;
+    /*This is the pink circle*/
+}
+
+#freeze-delight {
+    position: relative;
+    top: -162px;
+    left: 85px;
+    font-size: 8px;
+    text-align: center;
+    color: white;
+}
+    
+#bottom-container {
+    background-color: white;
+    /*position: relative;
+    top: -718px; I've add to comment/remove position:relative on multiple elements because it made a lot of mess in terms of space. Before doing this there was space either between the footer and the content or the footer would be stuck to the content but there would bea blank/background-color space between the footer and the bottom of the page which is not what I wanted. So instead I opted to go with margin and that fixed my issue which puzzled me for several days.*/
+    margin-bottom: -50px;
+    margin-top: -138px;
+    width: 100%;
+    height: 150px;
+}
+
+#product {
+    float: left;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-size: 9px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+#under-product {
+    float: left;
+    position: relative;
+    top: 25px;
+    left: -55px;
+    color: #E5658C;
+    font-size: 9px;
+}
+
+#para {
+    float: left;
+    position: relative;
+    top: 15px;
+    left: -55px;
+    color: #998A8A;
+    font-size: 9px;
+    width: 120px;
+}
+
+#small-yoghurt {
+    float: right;
+    /*position: relative;
+    top: 40px;
+    left: -500px;*/
+    margin-top: -100px;
+    margin-right: 10px;
+    width: 25%;
+    height: 100px;
+}
+    
+#bottom-container2 {
+    /*position: relative;
+    top: -733px;*/
+    width: 100%;
+    height: 80px;
+    background-color: #C8B513;
+}
+
+#bottom-container2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 2px;
+}
+
+#bottom-container2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+    position: relative;
+    top: 25px;
+    left: -15px;
+}
+    
+.social {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    left: 90px;
+    top: -5px;
+    display: inline-block;    
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 80%;
+    margin: -20px;
+    padding: 5% 5% 5% 4%;
+    color: white;
+}
+
+.social i:hover {
+    color: #FB416F;
+}
+
+#footer {
+    background-color: #C53D67;
+    width: 100%;
+    height: 100px;
+}
+
+#footer p {
+    /*position: relative;
+    top: 50px;
+    left: 765px;*/
+    width: 100%;
+    margin-left: 7px;
+    margin-top: -15px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
